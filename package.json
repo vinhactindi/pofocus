@@ -1,0 +1,24 @@
+{
+  "name": "pofocus",
+  "version": "1.0.0",
+  "description": "A simple CLI based focus supporting app",
+  "bin": "./bin/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.actindi:vinhactindi/pofocus.git"
+  },
+  "keywords": [
+    "pomodoro",
+    "focus",
+    "pofocus"
+  ],
+  "author": "vinhactindi <nguye.the.vinh@actindi.net> (https://github.com/vinhactindi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinhactindi/pofocus/issues"
+  },
+  "homepage": "https://github.com/vinhactindi/pofocus#readme"
+}
