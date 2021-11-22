@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple CLI based focus supporting app",
   "bin": "./bin/cli.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/vinhactindi/pofocus#readme",
   "dependencies": {
     "enquirer": "^2.3.6",
+    "log-update": "^5.0.0",
     "minimist": "^1.2.5",
     "node-notifier": "^10.0.0"
   },
