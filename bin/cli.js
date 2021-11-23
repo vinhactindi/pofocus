@@ -1,12 +1,21 @@
 #!/usr/bin/env node
 
 import minimist from 'minimist'
+import Cycle from '../lib/cycle.js'
 import Pomodoro from '../lib/pomodoro.js'
 
 const args = process.argv.slice(2)
 
 const minimistOpts = {
-  alias: { f: 'focus', s: 'short', l: 'long', h: 'help' },
+  alias: {
+    a: 'analytics',
+    f: 'focus',
+    s: 'short',
+    l: 'long',
+    m: 'message',
+    h: 'help',
+    r: 'reset'
+  },
   default: { f: 25, s: 5, l: 15 },
   unknown: (option) => {
     throw new Error('Unknown option ' + option)
@@ -28,7 +37,12 @@ Options:
 
   console.log(usage)
   process.exit(0)
+} else if (argv.reset) {
+  Cycle.drop()
+} else if (argv.analytics) {
+  Cycle.analytics()
 } else {
+  Cycle.migrate()
   const pomodoro = new Pomodoro(argv)
 
   pomodoro.start()
