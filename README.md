@@ -1,4 +1,4 @@
-# Pocofus
+# Pofocus
 
 Pofocus is a simple CLI-based focus supporting app.
 
